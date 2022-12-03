@@ -6,7 +6,6 @@
 var twoSum = function(nums, target) {
     let a;
     let b;
-    let temp;
     
     nums.some((num,index,arr)=>{
 
@@ -17,7 +16,7 @@ var twoSum = function(nums, target) {
                     break
              }
           }
-        a+b === target
+        arr[a]+arr[b] === target
     })
 
     return[a,b]
