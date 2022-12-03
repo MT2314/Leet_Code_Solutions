@@ -13,10 +13,9 @@ var twoSum = function(nums, target) {
           for (let i = index; i < arr.length;i++){
                 if(arr[i] + num === target && i != index) {
                  a = index
-
                  b = i
+                    break
              }
-              if (a+b === target) break
           }
         a+b === target
     })
